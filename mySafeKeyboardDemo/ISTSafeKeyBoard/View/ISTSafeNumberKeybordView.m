@@ -90,6 +90,7 @@ static NSInteger safeBaseBtnTag = 999;
             [btn setTitleColor:btnTitleColor forState:UIControlStateNormal];
             [btn setTitle:title forState:UIControlStateNormal];
         }
+//        btn.clipsToBounds = YES;
     }
 }
 
