@@ -17,7 +17,7 @@
             {
                 ISTSafeNumberKeybordView *numberView =[[ISTSafeNumberKeybordView alloc] init];
                 self.returnBlock = numberView.returnBlock;
-                self = (ISTSafeKeyboard *)numberView;
+                self = (ISTSafeKeyboard *)numberView;   //消除黄点，一个不留
             }
                 break;
             
