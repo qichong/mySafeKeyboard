@@ -24,9 +24,11 @@
     feild.layer.borderColor = [UIColor blackColor].CGColor;
     [self.view addSubview:feild];
     feild.inputView = keybord;
+    feild.secureTextEntry = YES;
+    
     keybord.returnBlock = ^{
         
-        NSLog(@"return");
+        NSLog(@"%@",feild.text);
     };
 
     // Do any additional setup after loading the view, typically from a nib.

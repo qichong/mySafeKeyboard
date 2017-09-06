@@ -39,21 +39,22 @@ static NSInteger safeBaseBtnTag = 999;
     [arrary insertObject:@"delete" atIndex:9];
     [arrary addObject:@"enter"];
     
-     UIColor *btnTitleColor = [UIColor colorWithRed:75/255.0 green:75/255.0 blue:75/255.0 alpha:1];
-     UIColor *backColor = [UIColor colorWithRed:217/255.0 green:217/255.0 blue:217/255.0 alpha:1];
+    UIColor *btnTitleColor = [UIColor colorWithRed:75/255.0 green:75/255.0 blue:75/255.0 alpha:1];
+    UIColor *backColor = [UIColor colorWithRed:217/255.0 green:217/255.0 blue:217/255.0 alpha:1];
     CGFloat gap = 10.0;
     
     CGFloat itemWidth = (CGRectGetWidth(window.frame) - 4 * gap ) / 3.0;
     CGFloat itemHeight = itemWidth / 2.0;
+    CGFloat topBtnHeight = itemHeight * 0.7;//设计稿上量的大约是高度的0.7倍
+
     
-    
-    self.frame = CGRectMake(0, 0, CGRectGetWidth(window.frame), 350);
+    self.frame = CGRectMake(0, 0, CGRectGetWidth(window.frame), topBtnHeight + (gap +itemHeight) * 4);
     self.backgroundColor = backColor;
     
     UIButton *topBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     topBtn.backgroundColor = backColor;
-    topBtn.frame = CGRectMake(0, 0, CGRectGetWidth(window.frame), 50);
-    [topBtn setImage:[UIImage imageNamed:@"xiala"] forState:UIControlStateNormal];
+    topBtn.frame = CGRectMake(0, 0, CGRectGetWidth(window.frame), topBtnHeight);
+    [topBtn setImage:[UIImage imageNamed:@"ISTSafeKeyboard-xialaImage"] forState:UIControlStateNormal];
     [topBtn addTarget:self action:@selector(registMyResponder:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:topBtn];
     
@@ -67,11 +68,13 @@ static NSInteger safeBaseBtnTag = 999;
         
         //固定左右两个按钮
         if (i == 9) {
-            [btn setImage:[UIImage imageNamed:@"icon2-1"] forState:UIControlStateNormal];
+            [btn setImage:[UIImage imageNamed:@"ISTSafeKeyboard-deleteImage"] forState:UIControlStateNormal];
+            [btn setImage:[UIImage imageNamed:@"ISTSafeKeyboard-deleteImage"] forState:UIControlStateHighlighted];
             [btn setTitle:arrary[i] forState:UIControlStateNormal];
             
         }else if (i == 11){
-            [btn setImage:[UIImage imageNamed:@"icon1-1"] forState:UIControlStateNormal];
+            [btn setImage:[UIImage imageNamed:@"ISTSafeKeyboard-enterImage"] forState:UIControlStateNormal];
+            [btn setImage:[UIImage imageNamed:@"ISTSafeKeyboard-enterImage"] forState:UIControlStateHighlighted];
             [btn setTitle:arrary[i] forState:UIControlStateNormal];
         }
         else{
@@ -80,7 +83,8 @@ static NSInteger safeBaseBtnTag = 999;
                 //为了是底部中间的那个按钮的tag值为正常的
                 btn.tag = safeBaseBtnTag + i - 1;
             }
-            [btn setImage:[UIImage imageNamed:@"bg2-1"] forState:UIControlStateNormal];
+            [btn setImage:[UIImage imageNamed:@"ISTSafeKeyboard-smallBackImage"] forState:UIControlStateNormal];
+            [btn setImage:[UIImage imageNamed:@"ISTSafeKeyboard-smallBackImage"] forState:UIControlStateHighlighted];
             NSString *title = arrary[i];
             [btn addLable];
             [btn setTitleColor:btnTitleColor forState:UIControlStateNormal];
@@ -119,14 +123,18 @@ static NSInteger safeBaseBtnTag = 999;
         return;
     }
     [textFeild changetext:sender.titleLabel.text];
-    
-    NSLog(@"%@",textFeild.text);
 }
 
 #pragma mark - notification willshow
 - (void)KeyboardWillShowNotification:(NSNotification *)notification{
     [self remixArray];
 }
+
+#pragma mark - dealloc
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

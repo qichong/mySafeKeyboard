@@ -21,6 +21,7 @@
     _safeLable = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
     _safeLable.backgroundColor = [UIColor clearColor];
     //      self.safeLable.font = [UIFont systemFontOfSize:15];
+    _safeLable.font = [UIFont fontWithName:@"Helvetica" size:18.f];
     _safeLable.textAlignment = NSTextAlignmentCenter;
     [self addSubview:_safeLable];
 }

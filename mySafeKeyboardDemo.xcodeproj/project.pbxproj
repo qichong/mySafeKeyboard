@@ -17,14 +17,11 @@
 		E16F1FF11F5EFA0100B7ED98 /* mySafeKeyboardDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E16F1FF01F5EFA0100B7ED98 /* mySafeKeyboardDemoUITests.m */; };
 		E16F20131F5EFA1F00B7ED98 /* ISTSafeKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E16F20001F5EFA1F00B7ED98 /* ISTSafeKeyboard.m */; };
 		E16F20141F5EFA1F00B7ED98 /* ISTSafeKeyboardButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E16F20031F5EFA1F00B7ED98 /* ISTSafeKeyboardButton.m */; };
-		E16F20151F5EFA1F00B7ED98 /* bg2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E16F20051F5EFA1F00B7ED98 /* bg2-1.png */; };
-		E16F20161F5EFA1F00B7ED98 /* icon1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E16F20061F5EFA1F00B7ED98 /* icon1-1.png */; };
-		E16F20171F5EFA1F00B7ED98 /* icon2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E16F20071F5EFA1F00B7ED98 /* icon2-1.png */; };
-		E16F20181F5EFA1F00B7ED98 /* xiala.png in Resources */ = {isa = PBXBuildFile; fileRef = E16F20081F5EFA1F00B7ED98 /* xiala.png */; };
 		E16F20191F5EFA1F00B7ED98 /* NSMutableArray+ISTSafeKeyboardUpsetOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = E16F200B1F5EFA1F00B7ED98 /* NSMutableArray+ISTSafeKeyboardUpsetOrder.m */; };
 		E16F201A1F5EFA1F00B7ED98 /* UIResponder+ISTSafeKeyboardFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = E16F200D1F5EFA1F00B7ED98 /* UIResponder+ISTSafeKeyboardFirstResponder.m */; };
 		E16F201B1F5EFA1F00B7ED98 /* UITextField+ISTSafeKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E16F200F1F5EFA1F00B7ED98 /* UITextField+ISTSafeKeyboard.m */; };
 		E16F201C1F5EFA1F00B7ED98 /* ISTSafeNumberKeybordView.m in Sources */ = {isa = PBXBuildFile; fileRef = E16F20121F5EFA1F00B7ED98 /* ISTSafeNumberKeybordView.m */; };
+		E1AC7EA61F5F8FB800C1AFBC /* ISTSafeKeyboard.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1AC7EA51F5F8FB800C1AFBC /* ISTSafeKeyboard.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,10 +62,6 @@
 		E16F20001F5EFA1F00B7ED98 /* ISTSafeKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISTSafeKeyboard.m; sourceTree = "<group>"; };
 		E16F20021F5EFA1F00B7ED98 /* ISTSafeKeyboardButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISTSafeKeyboardButton.h; sourceTree = "<group>"; };
 		E16F20031F5EFA1F00B7ED98 /* ISTSafeKeyboardButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISTSafeKeyboardButton.m; sourceTree = "<group>"; };
-		E16F20051F5EFA1F00B7ED98 /* bg2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg2-1.png"; sourceTree = "<group>"; };
-		E16F20061F5EFA1F00B7ED98 /* icon1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon1-1.png"; sourceTree = "<group>"; };
-		E16F20071F5EFA1F00B7ED98 /* icon2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon2-1.png"; sourceTree = "<group>"; };
-		E16F20081F5EFA1F00B7ED98 /* xiala.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiala.png; sourceTree = "<group>"; };
 		E16F200A1F5EFA1F00B7ED98 /* NSMutableArray+ISTSafeKeyboardUpsetOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+ISTSafeKeyboardUpsetOrder.h"; sourceTree = "<group>"; };
 		E16F200B1F5EFA1F00B7ED98 /* NSMutableArray+ISTSafeKeyboardUpsetOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+ISTSafeKeyboardUpsetOrder.m"; sourceTree = "<group>"; };
 		E16F200C1F5EFA1F00B7ED98 /* UIResponder+ISTSafeKeyboardFirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+ISTSafeKeyboardFirstResponder.h"; sourceTree = "<group>"; };
@@ -77,6 +70,7 @@
 		E16F200F1F5EFA1F00B7ED98 /* UITextField+ISTSafeKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ISTSafeKeyboard.m"; sourceTree = "<group>"; };
 		E16F20111F5EFA1F00B7ED98 /* ISTSafeNumberKeybordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISTSafeNumberKeybordView.h; sourceTree = "<group>"; };
 		E16F20121F5EFA1F00B7ED98 /* ISTSafeNumberKeybordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISTSafeNumberKeybordView.m; sourceTree = "<group>"; };
+		E1AC7EA51F5F8FB800C1AFBC /* ISTSafeKeyboard.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ISTSafeKeyboard.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,10 +186,7 @@
 		E16F20041F5EFA1F00B7ED98 /* Supportint Files */ = {
 			isa = PBXGroup;
 			children = (
-				E16F20051F5EFA1F00B7ED98 /* bg2-1.png */,
-				E16F20061F5EFA1F00B7ED98 /* icon1-1.png */,
-				E16F20071F5EFA1F00B7ED98 /* icon2-1.png */,
-				E16F20081F5EFA1F00B7ED98 /* xiala.png */,
+				E1AC7EA51F5F8FB800C1AFBC /* ISTSafeKeyboard.xcassets */,
 			);
 			path = "Supportint Files";
 			sourceTree = "<group>";
@@ -328,13 +319,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E16F20161F5EFA1F00B7ED98 /* icon1-1.png in Resources */,
 				E16F1FDB1F5EFA0000B7ED98 /* LaunchScreen.storyboard in Resources */,
-				E16F20151F5EFA1F00B7ED98 /* bg2-1.png in Resources */,
-				E16F20181F5EFA1F00B7ED98 /* xiala.png in Resources */,
+				E1AC7EA61F5F8FB800C1AFBC /* ISTSafeKeyboard.xcassets in Resources */,
 				E16F1FD81F5EFA0000B7ED98 /* Assets.xcassets in Resources */,
 				E16F1FD61F5EFA0000B7ED98 /* Main.storyboard in Resources */,
-				E16F20171F5EFA1F00B7ED98 /* icon2-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +589,7 @@
 				E16F1FF71F5EFA0100B7ED98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E16F1FF81F5EFA0100B7ED98 /* Build configuration list for PBXNativeTarget "mySafeKeyboardDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -609,6 +598,7 @@
 				E16F1FFA1F5EFA0100B7ED98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E16F1FFB1F5EFA0100B7ED98 /* Build configuration list for PBXNativeTarget "mySafeKeyboardDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -617,6 +607,7 @@
 				E16F1FFD1F5EFA0100B7ED98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
